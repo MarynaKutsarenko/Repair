@@ -1,3 +1,5 @@
+var isAddedMap = false;
+
 $(document).ready(function(){
 
   $('.phone').mask('8 (999) 999-99-99');
@@ -116,7 +118,6 @@ $(document).ready(function(){
     
     
     $(window).scroll(function () {
-      var isAddedMap = false;
       var el = $('.map');
       
       if ($(this).scrollTop() > el.offset().top - 1000) {
