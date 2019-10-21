@@ -1,0 +1,69 @@
+.portfolio
+  background: $secondary url('../img/slider/slider_img.jpg') repeat-y
+  background-position: center left
+  background-size: 50%
+  padding-top: 55px
+  padding-bottom: 100px
+  &-headline
+    display: block
+    margin-bottom: 95px
+    text-align: center
+    +bold
+    font-size: 28px
+    line-height: 42px
+  &__title
+    display: block
+    max-width: 800px
+    margin: auto
+.arrows
+  display: flex
+  width: 117px
+  justify-content: space-between
+  margin: auto
+  outline: none
+  &__left, &__right
+    &:hover
+      cursor: pointer
+.slick-slide img
+  width: 369px
+  height: 100%
+  margin-bottom: 21px
+  &slider
+    margin-left: -20px
+.slider__image
+    border: none
+    outline: none
+    margin: auto
+@media ( max-width: 1200px )
+  .slider__image
+    width: 370px
+    height: 280px
+@media ( max-width: 768px  )
+  .portfolio
+    padding-top: 50px
+    padding-bottom: 70px
+    &-headline
+      margin-bottom: 77px
+      font-size: 20px
+      line-height: 36px
+    &__title
+      max-width: 565px
+@media ( max-width: 567px )
+  .portfolio
+    background: $secondary
+    padding-top: 14px
+    padding-bottom: 40px
+    &-headline
+      margin-bottom: 41px
+      font-size: 18px
+      line-height: 22px
+    &__title
+      max-width: 280px
+.slider
+  &__image
+    width: 250px !important
+    height: 182px !important
+.arrows
+  margin-top: 30px 
+      
+    
