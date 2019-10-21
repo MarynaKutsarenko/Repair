@@ -99,6 +99,13 @@ $(document).ready(function(){
       success: function (response) {
         $('#offer__form')[0].reset();
         $('#offer__form').append("<p class='offer-groupresponse'>  Ваша заявка принята  </p>");
+        $('.offer-groupresponse').css({
+          'position': 'absolute',
+          'bottom': '61px',
+          'left': '3px',
+          'font-size': '20px',
+          'color': 'green'
+        })
       },
       error: function( jqXHR, textStatus, errorThrown ) {
         console.log(jqXHR + " " + textStatus);
